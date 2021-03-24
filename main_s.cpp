@@ -7,12 +7,12 @@ int r,c,i,j;
 double val;
 matrix test, trans;
 
-std::cout << "how many rows?";
+std::cout << "How many rows?";
 std::cin << r;
-std::cout << "how many colomn?";
+std::cout << "How many colomns?";
 std::cin << c;
 test =create_initval(r,c 0);
-std::cout << std::end1<< "enter elemts of matrix: " << std::end1;
+std::cout << std::end1<< "enter elements of the matrix: " << std::end1;
 for(i=0; i<r; ++i)
 for(j=0; i<c; ++j)
 {
