@@ -5,7 +5,6 @@ matrix create_empty(int rdim, int cdim)
 {
   int i;
   matrix result;
-  /* assign values to the row_dim and col_dim structure members */
   result.row_dim = rdim;
   result.col_dim = cdim;
   result.element = (T**)malloc(rdim * sizeof(T*));
@@ -18,13 +17,11 @@ matrix create_initval(int rdim, int cdim, T val)
 {
   int i,j;
   matrix result;
-  /* assign values to the structure members */
   result.row_dim = rdim;
   result.col_dim = cdim;
   result.element = (T**)malloc(rdim * sizeof(T*));
   for (i=0; i<rdim; i++)
     result.element[i] = (T*)malloc(cdim * sizeof(T));
-  /* initialize the matrix elements */
   for (i=0; i<rdim; i++)
     for (j=0; j<cdim; j++)
       result.element[i][j] = val;
